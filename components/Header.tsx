@@ -23,7 +23,7 @@ export default function Header() {
     <header className="py-6">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold">
-          Guillermo Rauch
+          Pawan Kumar
         </Link>
         <nav>
           <ul className="flex space-x-4">
