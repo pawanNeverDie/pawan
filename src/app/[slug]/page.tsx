@@ -27,7 +27,6 @@ const posts = {
 
 export default function BlogPost({ params }: { params: { slug: string } }) {
   const post = posts[params.slug as keyof typeof posts]
-
   if (!post) {
     notFound()
   }
@@ -37,7 +36,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
       <Header />
       <main className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
-        <p className="text-gray-400 mb-8">@rauchg • {post.date} (2y ago)</p>
+        <p className="text-gray-400 mb-8">Pawan• {post.date} (2y ago)</p>
         <div className="prose prose-invert max-w-none">
           {post.content.split('\n\n').map((paragraph, index) => (
             <p key={index} className="mb-4">
